@@ -6,6 +6,8 @@
 package twilight;
 
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -38,6 +40,30 @@ public class Controller implements java.awt.event.ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    public ActionListener unemplementedFeature(){
+        return new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                JOptionPane.showMessageDialog(view, "This feature has not been implemented.");
+            }
+        };
+    }
+    public ActionListener newGameListener(){
+        return new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                int result;
+                if(model.getGame() == null) //no game open
+                    result = JOptionPane.showConfirmDialog(null, "Would you like to start a new game?");
+                else //game currently open
+                    result = JOptionPane.showConfirmDialog(null, "Would you like to start a new game?\nAny unsaved data on the current game will be lost.");
+                
+                if(result==JOptionPane.YES_OPTION)
+                    model.newGame(1);
+                
+            }
+        };
     }
     
 }

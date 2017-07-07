@@ -19,6 +19,12 @@ public class View extends javax.swing.JFrame {
         System.out.println("New View created");
         initComponents();
     }
+    public View(Controller c){
+        controller = c;
+        System.out.println("New View created with controller");
+        initComponents();
+        this.setVisible(true);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -29,19 +35,65 @@ public class View extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
+        menuBar = new javax.swing.JMenuBar();
+        fileMenu = new javax.swing.JMenu();
+        newGameMenuItem = new javax.swing.JMenuItem();
+        loadGameMenuItem = new javax.swing.JMenuItem();
+        recentGameMenuItem = new javax.swing.JMenu();
+        exitMenuItem = new javax.swing.JMenuItem();
+        helpMenu = new javax.swing.JMenu();
+        versionHistoryMenuItem = new javax.swing.JMenuItem();
+        aboutMenuItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("The Legend of Twilight");
 
-        jMenu1.setText("File");
-        jMenuBar1.add(jMenu1);
+        fileMenu.setMnemonic('F');
+        fileMenu.setText("File");
 
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
+        newGameMenuItem.setMnemonic('N');
+        newGameMenuItem.setText("New Game...");
+        newGameMenuItem.addActionListener(controller.newGameListener());
+        fileMenu.add(newGameMenuItem);
 
-        setJMenuBar(jMenuBar1);
+        loadGameMenuItem.setText("Load Game");
+        loadGameMenuItem.setEnabled(false);
+        fileMenu.add(loadGameMenuItem);
+
+        recentGameMenuItem.setText("Recent...");
+        recentGameMenuItem.setEnabled(false);
+        fileMenu.add(recentGameMenuItem);
+
+        exitMenuItem.setMnemonic('x');
+        exitMenuItem.setText("Exit");
+        exitMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitMenuItemActionPerformed(evt);
+            }
+        });
+        fileMenu.add(exitMenuItem);
+
+        menuBar.add(fileMenu);
+
+        helpMenu.setMnemonic('H');
+        helpMenu.setText("Help");
+
+        versionHistoryMenuItem.setText("Version History");
+        versionHistoryMenuItem.setEnabled(false);
+        helpMenu.add(versionHistoryMenuItem);
+
+        aboutMenuItem.setText("About");
+        aboutMenuItem.setEnabled(false);
+        aboutMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aboutMenuItemActionPerformed(evt);
+            }
+        });
+        helpMenu.add(aboutMenuItem);
+
+        menuBar.add(helpMenu);
+
+        setJMenuBar(menuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -54,8 +106,17 @@ public class View extends javax.swing.JFrame {
             .addGap(0, 579, Short.MAX_VALUE)
         );
 
-        setBounds(0, 0, 816, 639);
+        setSize(new java.awt.Dimension(816, 639));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void aboutMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutMenuItemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_aboutMenuItemActionPerformed
+
+    private void exitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItemActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_exitMenuItemActionPerformed
 
     /**
      * @param args the command line arguments
@@ -98,8 +159,14 @@ public class View extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem aboutMenuItem;
+    private javax.swing.JMenuItem exitMenuItem;
+    private javax.swing.JMenu fileMenu;
+    private javax.swing.JMenu helpMenu;
+    private javax.swing.JMenuItem loadGameMenuItem;
+    private javax.swing.JMenuBar menuBar;
+    private javax.swing.JMenuItem newGameMenuItem;
+    private javax.swing.JMenu recentGameMenuItem;
+    private javax.swing.JMenuItem versionHistoryMenuItem;
     // End of variables declaration//GEN-END:variables
 }

@@ -16,12 +16,14 @@ class RunGame {
     public RunGame()
     {
         //create Model and View2
-        Model myModel = new Model();
-        View myView = new View();
+        //Model myModel = new Model();
+        //View myView = new View();
         
         //create Contoller. Tell it about Model and View2.
-        Controller myController = new Controller(myModel,myView);
-        myView.setVisible(true);
+        Controller myController = new Controller();
+        myController.addModel(new Model());
+        myController.addView(new View(myController));
+        //myView.setVisible(true);
         
         /* Controller myController = new Controller(); //empty constructor
         myController.addModel(myModel);
