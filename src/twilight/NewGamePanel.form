@@ -124,6 +124,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Fire"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fireRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="waterRB_1">
           <Properties>
@@ -132,6 +135,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Water"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="waterRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="windRB_1">
           <Properties>
@@ -140,6 +146,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Wind"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="windRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="earthRB_1">
           <Properties>
@@ -148,6 +157,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Earth"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="earthRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JPanel" name="blank_1">
 
@@ -171,6 +183,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Lightning"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lightningRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="iceRB_1">
           <Properties>
@@ -179,6 +194,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Ice"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="iceRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="natureRB_1">
           <Properties>
@@ -187,6 +205,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Nature"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="natureRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="metalRB_1">
           <Properties>
@@ -195,6 +216,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Metal"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="metalRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JPanel" name="blank_2">
 
@@ -218,6 +242,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Ailment"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ailmentRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="unknownRB_1">
           <Properties>
@@ -238,6 +265,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Barrier"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="barrierRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="animalRB_1">
           <Properties>
@@ -246,6 +276,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Animal"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="animalRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JPanel" name="blank_3">
 
@@ -269,6 +302,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Summon"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="summonRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="mirrorRB_1">
           <Properties>
@@ -277,6 +313,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Mirror"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mirrorRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="timeRB_1">
           <Properties>
@@ -285,6 +324,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Time"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="timeRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="spaceRB_1">
           <Properties>
@@ -293,6 +335,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Space"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="spaceRB_1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="randomRB_1">
           <Properties>
@@ -386,6 +431,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Fire"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fireRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="waterRB_2">
           <Properties>
@@ -394,6 +442,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Water"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="waterRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="windRB_2">
           <Properties>
@@ -402,6 +453,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Wind"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="windRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="earthRB_2">
           <Properties>
@@ -410,6 +464,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Earth"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="earthRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel1">
 
@@ -433,6 +490,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Lightning"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lightningRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="iceRB_2">
           <Properties>
@@ -441,6 +501,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Ice"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="iceRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="natureRB_2">
           <Properties>
@@ -449,6 +512,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Nature"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="natureRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="metalRB_2">
           <Properties>
@@ -457,6 +523,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Metal"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="metalRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel3">
 
@@ -480,6 +549,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Ailment"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ailmentRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="unknownRB_2">
           <Properties>
@@ -489,6 +561,9 @@
             <Property name="text" type="java.lang.String" value="&lt;Unknown&gt;"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="unknownRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="barrierRB_2">
           <Properties>
@@ -497,6 +572,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Barrier"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="barrierRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="animalRB_2">
           <Properties>
@@ -505,6 +583,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Animal"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="animalRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel4">
 
@@ -528,6 +609,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Summon"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="summonRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="mirrorRB_2">
           <Properties>
@@ -536,6 +620,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Mirror"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mirrorRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="timeRB_2">
           <Properties>
@@ -544,6 +631,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Time"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="timeRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="spaceRB_2">
           <Properties>
@@ -552,6 +642,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Space"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="spaceRB_2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="randomRB_2">
           <Properties>

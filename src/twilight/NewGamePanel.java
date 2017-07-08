@@ -147,18 +147,38 @@ public class NewGamePanel extends javax.swing.JPanel {
 
         player1_elementButtonGroup.add(fireRB_1);
         fireRB_1.setText("Fire");
+        fireRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fireRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(fireRB_1);
 
         player1_elementButtonGroup.add(waterRB_1);
         waterRB_1.setText("Water");
+        waterRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                waterRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(waterRB_1);
 
         player1_elementButtonGroup.add(windRB_1);
         windRB_1.setText("Wind");
+        windRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                windRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(windRB_1);
 
         player1_elementButtonGroup.add(earthRB_1);
         earthRB_1.setText("Earth");
+        earthRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                earthRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(earthRB_1);
 
         javax.swing.GroupLayout blank_1Layout = new javax.swing.GroupLayout(blank_1);
@@ -176,18 +196,38 @@ public class NewGamePanel extends javax.swing.JPanel {
 
         player1_elementButtonGroup.add(lightningRB_1);
         lightningRB_1.setText("Lightning");
+        lightningRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lightningRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(lightningRB_1);
 
         player1_elementButtonGroup.add(iceRB_1);
         iceRB_1.setText("Ice");
+        iceRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iceRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(iceRB_1);
 
         player1_elementButtonGroup.add(natureRB_1);
         natureRB_1.setText("Nature");
+        natureRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                natureRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(natureRB_1);
 
         player1_elementButtonGroup.add(metalRB_1);
         metalRB_1.setText("Metal");
+        metalRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                metalRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(metalRB_1);
 
         javax.swing.GroupLayout blank_2Layout = new javax.swing.GroupLayout(blank_2);
@@ -205,6 +245,11 @@ public class NewGamePanel extends javax.swing.JPanel {
 
         player1_elementButtonGroup.add(ailmentRB_1);
         ailmentRB_1.setText("Ailment");
+        ailmentRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ailmentRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(ailmentRB_1);
 
         player1_elementButtonGroup.add(unknownRB_1);
@@ -219,10 +264,20 @@ public class NewGamePanel extends javax.swing.JPanel {
 
         player1_elementButtonGroup.add(barrierRB_1);
         barrierRB_1.setText("Barrier");
+        barrierRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                barrierRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(barrierRB_1);
 
         player1_elementButtonGroup.add(animalRB_1);
         animalRB_1.setText("Animal");
+        animalRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                animalRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(animalRB_1);
 
         javax.swing.GroupLayout blank_3Layout = new javax.swing.GroupLayout(blank_3);
@@ -240,18 +295,38 @@ public class NewGamePanel extends javax.swing.JPanel {
 
         player1_elementButtonGroup.add(summonRB_1);
         summonRB_1.setText("Summon");
+        summonRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                summonRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(summonRB_1);
 
         player1_elementButtonGroup.add(mirrorRB_1);
         mirrorRB_1.setText("Mirror");
+        mirrorRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mirrorRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(mirrorRB_1);
 
         player1_elementButtonGroup.add(timeRB_1);
         timeRB_1.setText("Time");
+        timeRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                timeRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(timeRB_1);
 
         player1_elementButtonGroup.add(spaceRB_1);
         spaceRB_1.setText("Space");
+        spaceRB_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                spaceRB_1ActionPerformed(evt);
+            }
+        });
         player1_ElementPanel.add(spaceRB_1);
 
         player1_elementButtonGroup.add(randomRB_1);
@@ -309,18 +384,38 @@ public class NewGamePanel extends javax.swing.JPanel {
 
         player2_elementButtonGroup.add(fireRB_2);
         fireRB_2.setText("Fire");
+        fireRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fireRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(fireRB_2);
 
         player2_elementButtonGroup.add(waterRB_2);
         waterRB_2.setText("Water");
+        waterRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                waterRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(waterRB_2);
 
         player2_elementButtonGroup.add(windRB_2);
         windRB_2.setText("Wind");
+        windRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                windRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(windRB_2);
 
         player2_elementButtonGroup.add(earthRB_2);
         earthRB_2.setText("Earth");
+        earthRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                earthRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(earthRB_2);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -338,18 +433,38 @@ public class NewGamePanel extends javax.swing.JPanel {
 
         player2_elementButtonGroup.add(lightningRB_2);
         lightningRB_2.setText("Lightning");
+        lightningRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lightningRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(lightningRB_2);
 
         player2_elementButtonGroup.add(iceRB_2);
         iceRB_2.setText("Ice");
+        iceRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iceRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(iceRB_2);
 
         player2_elementButtonGroup.add(natureRB_2);
         natureRB_2.setText("Nature");
+        natureRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                natureRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(natureRB_2);
 
         player2_elementButtonGroup.add(metalRB_2);
         metalRB_2.setText("Metal");
+        metalRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                metalRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(metalRB_2);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -367,19 +482,39 @@ public class NewGamePanel extends javax.swing.JPanel {
 
         player2_elementButtonGroup.add(ailmentRB_2);
         ailmentRB_2.setText("Ailment");
+        ailmentRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ailmentRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(ailmentRB_2);
 
         player2_elementButtonGroup.add(unknownRB_2);
         unknownRB_2.setText("<Unknown>");
         unknownRB_2.setEnabled(false);
+        unknownRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                unknownRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(unknownRB_2);
 
         player2_elementButtonGroup.add(barrierRB_2);
         barrierRB_2.setText("Barrier");
+        barrierRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                barrierRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(barrierRB_2);
 
         player2_elementButtonGroup.add(animalRB_2);
         animalRB_2.setText("Animal");
+        animalRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                animalRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(animalRB_2);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -397,18 +532,38 @@ public class NewGamePanel extends javax.swing.JPanel {
 
         player2_elementButtonGroup.add(summonRB_2);
         summonRB_2.setText("Summon");
+        summonRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                summonRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(summonRB_2);
 
         player2_elementButtonGroup.add(mirrorRB_2);
         mirrorRB_2.setText("Mirror");
+        mirrorRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mirrorRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(mirrorRB_2);
 
         player2_elementButtonGroup.add(timeRB_2);
         timeRB_2.setText("Time");
+        timeRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                timeRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(timeRB_2);
 
         player2_elementButtonGroup.add(spaceRB_2);
         spaceRB_2.setText("Space");
+        spaceRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                spaceRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(spaceRB_2);
 
         player2_elementButtonGroup.add(randomRB_2);
@@ -445,7 +600,8 @@ public class NewGamePanel extends javax.swing.JPanel {
     }//GEN-LAST:event_player2_NameTextFieldActionPerformed
 
     private void unknownRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unknownRB_1ActionPerformed
-        // TODO add your handling code here:
+        player1_element = Game.XXX_ELEMENT;
+        updateConfirmationPanel();
     }//GEN-LAST:event_unknownRB_1ActionPerformed
 
     private void randomRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_randomRB_1ActionPerformed
@@ -460,7 +616,7 @@ public class NewGamePanel extends javax.swing.JPanel {
             case  7: player1_element = Game.NATURE_ELEMENT;    break;     
             case  8: player1_element = Game.METAL_ELEMENT;     break;
             case  9: player1_element = Game.AILMENT_ELEMENT;   break;
-            case 10: player1_element = Game.XXX_ELEMENT;       break;
+            case 10: randomRB_1.doClick(); break;//player1_element = Game.XXX_ELEMENT;       break;
             case 11: player1_element = Game.BARRIER_ELEMENT;   break;     
             case 12: player1_element = Game.ANIMAL_ELEMENT;    break;
             case 13: player1_element = Game.SUMMON_ELEMENT;    break;
@@ -494,6 +650,161 @@ public class NewGamePanel extends javax.swing.JPanel {
         }
         updateConfirmationPanel();
     }//GEN-LAST:event_randomRB_2ActionPerformed
+
+    private void fireRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fireRB_2ActionPerformed
+        player2_element = Game.FIRE_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_fireRB_2ActionPerformed
+
+    private void fireRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fireRB_1ActionPerformed
+        player1_element = Game.FIRE_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_fireRB_1ActionPerformed
+
+    private void waterRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_waterRB_1ActionPerformed
+        player1_element = Game.WATER_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_waterRB_1ActionPerformed
+
+    private void windRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_windRB_1ActionPerformed
+        player1_element = Game.WIND_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_windRB_1ActionPerformed
+
+    private void earthRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_earthRB_1ActionPerformed
+        player1_element = Game.EARTH_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_earthRB_1ActionPerformed
+
+    private void lightningRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lightningRB_1ActionPerformed
+        player1_element = Game.LIGHTNING_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_lightningRB_1ActionPerformed
+
+    private void iceRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iceRB_1ActionPerformed
+        player1_element = Game.ICE_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_iceRB_1ActionPerformed
+
+    private void natureRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_natureRB_1ActionPerformed
+        player1_element = Game.NATURE_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_natureRB_1ActionPerformed
+
+    private void metalRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_metalRB_1ActionPerformed
+        player1_element = Game.METAL_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_metalRB_1ActionPerformed
+
+    private void ailmentRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ailmentRB_1ActionPerformed
+        player1_element = Game.AILMENT_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_ailmentRB_1ActionPerformed
+
+    private void barrierRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_barrierRB_1ActionPerformed
+        player1_element = Game.BARRIER_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_barrierRB_1ActionPerformed
+
+    private void animalRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_animalRB_1ActionPerformed
+        player1_element = Game.ANIMAL_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_animalRB_1ActionPerformed
+
+    private void summonRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_summonRB_1ActionPerformed
+        player1_element = Game.SUMMON_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_summonRB_1ActionPerformed
+
+    private void mirrorRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mirrorRB_1ActionPerformed
+        player1_element = Game.MIRROR_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_mirrorRB_1ActionPerformed
+
+    private void timeRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeRB_1ActionPerformed
+        player1_element = Game.TIME_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_timeRB_1ActionPerformed
+
+    private void spaceRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_spaceRB_1ActionPerformed
+        player1_element = Game.SPACE_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_spaceRB_1ActionPerformed
+
+    private void waterRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_waterRB_2ActionPerformed
+        player2_element = Game.WATER_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_waterRB_2ActionPerformed
+
+    private void windRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_windRB_2ActionPerformed
+        player2_element = Game.WIND_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_windRB_2ActionPerformed
+
+    private void earthRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_earthRB_2ActionPerformed
+        player2_element = Game.EARTH_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_earthRB_2ActionPerformed
+
+    private void lightningRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lightningRB_2ActionPerformed
+        player2_element = Game.LIGHTNING_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_lightningRB_2ActionPerformed
+
+    private void iceRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iceRB_2ActionPerformed
+        player2_element = Game.ICE_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_iceRB_2ActionPerformed
+
+    private void natureRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_natureRB_2ActionPerformed
+        player2_element = Game.NATURE_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_natureRB_2ActionPerformed
+
+    private void metalRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_metalRB_2ActionPerformed
+        player2_element = Game.METAL_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_metalRB_2ActionPerformed
+
+    private void ailmentRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ailmentRB_2ActionPerformed
+        player2_element = Game.AILMENT_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_ailmentRB_2ActionPerformed
+
+    private void unknownRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unknownRB_2ActionPerformed
+        player2_element = Game.XXX_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_unknownRB_2ActionPerformed
+
+    private void barrierRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_barrierRB_2ActionPerformed
+        player2_element = Game.BARRIER_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_barrierRB_2ActionPerformed
+
+    private void animalRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_animalRB_2ActionPerformed
+        player2_element = Game.ANIMAL_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_animalRB_2ActionPerformed
+
+    private void summonRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_summonRB_2ActionPerformed
+        player2_element = Game.SUMMON_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_summonRB_2ActionPerformed
+
+    private void mirrorRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mirrorRB_2ActionPerformed
+        player2_element = Game.MIRROR_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_mirrorRB_2ActionPerformed
+
+    private void timeRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeRB_2ActionPerformed
+        player2_element = Game.TIME_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_timeRB_2ActionPerformed
+
+    private void spaceRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_spaceRB_2ActionPerformed
+        player2_element = Game.SPACE_ELEMENT;
+        updateConfirmationPanel();
+    }//GEN-LAST:event_spaceRB_2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
