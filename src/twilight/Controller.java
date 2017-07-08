@@ -60,8 +60,11 @@ public class Controller implements java.awt.event.ActionListener {
                     result = JOptionPane.showConfirmDialog(null, "Would you like to start a new game?\nAny unsaved data on the current game will be lost.");
                 
                 if(result==JOptionPane.YES_OPTION)
-                    model.newGame(1);
-                
+                    createNewGame(); 
+            }
+
+            private void createNewGame() {
+                view.newGamePanel();
             }
         };
     }

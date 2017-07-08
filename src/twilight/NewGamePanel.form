@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="player1_elementButtonGroup">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="player2_elementButtonGroup">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[800, 600]"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-102,0,0,3,-80"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+    <Property name="columns" type="int" value="1"/>
+    <Property name="rows" type="int" value="6"/>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="newGameLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Vivaldi" size="36" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="New Game!"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JPanel" name="player1_NamePanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="descriptionLabel" pref="924" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="player1_NameTextField" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Component id="elementLabel" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="descriptionLabel" min="-2" pref="39" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="elementLabel" max="32767" attributes="0"/>
+                      <Component id="player1_NameTextField" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="descriptionLabel">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Choose each player&apos;s elements."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="elementLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&apos;s Element"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="player1_NameTextField">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="f0" green="f0" red="f0" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="Player"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="player1_NameTextFieldActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="player1_ElementPanel">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="5"/>
+        <Property name="rows" type="int" value="4"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JRadioButton" name="fireRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Fire"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="waterRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Water"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="windRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Wind"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="earthRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Earth"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JPanel" name="blank_1">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="188" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="27" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+        <Component class="javax.swing.JRadioButton" name="lightningRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Lightning"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="iceRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Ice"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="natureRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Nature"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="metalRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Metal"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JPanel" name="blank_2">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="188" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="27" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+        <Component class="javax.swing.JRadioButton" name="ailmentRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Ailment"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="unknownRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&lt;Unknown&gt;"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="unknownRB_1ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="barrierRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Barrier"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="animalRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Animal"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JPanel" name="blank_3">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="188" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="27" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+        <Component class="javax.swing.JRadioButton" name="summonRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Summon"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="mirrorRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Mirror"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="timeRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Time"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="spaceRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Space"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="randomRB_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player1_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&lt;Random&gt;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="randomRB_1ActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="player2_NamePanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="player2_NameTextField" pref="461" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="elementLabel1" pref="459" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="elementLabel1" alignment="0" max="32767" attributes="0"/>
+                      <Component id="player2_NameTextField" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="elementLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&apos;s Element"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="player2_NameTextField">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="f0" green="f0" red="f0" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="text" type="java.lang.String" value="Opponent"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder/>
+              </Border>
+            </Property>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Default Cursor"/>
+            </Property>
+            <Property name="highlighter" type="javax.swing.text.Highlighter" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="null"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="player2_NameTextFieldActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="player_2elementPanel">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="5"/>
+        <Property name="rows" type="int" value="4"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JRadioButton" name="fireRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Fire"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="waterRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Water"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="windRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Wind"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="earthRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Earth"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="93" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="23" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+        <Component class="javax.swing.JRadioButton" name="lightningRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Lightning"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="iceRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Ice"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="natureRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Nature"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="metalRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Metal"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JPanel" name="jPanel3">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="93" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="23" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+        <Component class="javax.swing.JRadioButton" name="ailmentRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Ailment"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="unknownRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&lt;Unknown&gt;"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="barrierRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Barrier"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="animalRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Animal"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JPanel" name="jPanel4">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="93" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="23" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+        <Component class="javax.swing.JRadioButton" name="summonRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Summon"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="mirrorRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Mirror"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="timeRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Time"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="spaceRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Space"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="randomRB_2">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="player2_elementButtonGroup"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&lt;Random&gt;"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="confirmationPanel">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="confirmationLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Monotype Corsiva" size="48" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&lt;Unknown&gt; vs. &lt;Unknown&gt;"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="Center"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="nextButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Next &gt;&gt;"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="After"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

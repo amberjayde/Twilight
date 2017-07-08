@@ -12,6 +12,7 @@ package twilight;
 public class View extends javax.swing.JFrame {
 
     Controller controller;
+    NewGamePanel newGamePanel;
     /**
      * Creates new form View
      */
@@ -47,10 +48,12 @@ public class View extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("The Legend of Twilight");
+        getContentPane().setLayout(new java.awt.FlowLayout());
 
         fileMenu.setMnemonic('F');
         fileMenu.setText("File");
 
+        newGameMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
         newGameMenuItem.setMnemonic('N');
         newGameMenuItem.setText("New Game...");
         newGameMenuItem.addActionListener(controller.newGameListener());
@@ -94,17 +97,6 @@ public class View extends javax.swing.JFrame {
         menuBar.add(helpMenu);
 
         setJMenuBar(menuBar);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 579, Short.MAX_VALUE)
-        );
 
         setSize(new java.awt.Dimension(816, 639));
         setLocationRelativeTo(null);
@@ -156,6 +148,13 @@ public class View extends javax.swing.JFrame {
     void addListener(Controller aThis) {
         this.controller = controller;
             
+    }
+    void newGamePanel() {
+        newGamePanel = new NewGamePanel();
+        System.out.println("here");
+        this.add(newGamePanel);
+        pack();
+        repaint();
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
