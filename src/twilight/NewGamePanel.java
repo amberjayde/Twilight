@@ -327,11 +327,11 @@ public class NewGamePanel extends javax.swing.JPanel {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 93, Short.MAX_VALUE)
+            .addGap(0, 188, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 23, Short.MAX_VALUE)
+            .addGap(0, 27, Short.MAX_VALUE)
         );
 
         player_2elementPanel.add(jPanel1);
@@ -356,11 +356,11 @@ public class NewGamePanel extends javax.swing.JPanel {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 93, Short.MAX_VALUE)
+            .addGap(0, 188, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 23, Short.MAX_VALUE)
+            .addGap(0, 27, Short.MAX_VALUE)
         );
 
         player_2elementPanel.add(jPanel3);
@@ -386,11 +386,11 @@ public class NewGamePanel extends javax.swing.JPanel {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 93, Short.MAX_VALUE)
+            .addGap(0, 188, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 23, Short.MAX_VALUE)
+            .addGap(0, 27, Short.MAX_VALUE)
         );
 
         player_2elementPanel.add(jPanel4);
@@ -413,6 +413,11 @@ public class NewGamePanel extends javax.swing.JPanel {
 
         player2_elementButtonGroup.add(randomRB_2);
         randomRB_2.setText("<Random>");
+        randomRB_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                randomRB_2ActionPerformed(evt);
+            }
+        });
         player_2elementPanel.add(randomRB_2);
 
         add(player_2elementPanel);
@@ -420,7 +425,8 @@ public class NewGamePanel extends javax.swing.JPanel {
         confirmationPanel.setLayout(new java.awt.BorderLayout());
 
         confirmationLabel.setFont(new java.awt.Font("Monotype Corsiva", 1, 48)); // NOI18N
-        confirmationLabel.setText("<Unknown> vs. <Unknown>");
+        confirmationLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        confirmationLabel.setText("< > vs. < >");
         confirmationPanel.add(confirmationLabel, java.awt.BorderLayout.CENTER);
 
         nextButton.setText("Next >>");
@@ -445,12 +451,49 @@ public class NewGamePanel extends javax.swing.JPanel {
     private void randomRB_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_randomRB_1ActionPerformed
         int i = random.nextInt(16)+1;
         switch(i){
-            case 1: player1_element = Game.FIRE_ELEMENT;
-                break;
-            
+            case  1: player1_element = Game.FIRE_ELEMENT;      break;
+            case  2: player1_element = Game.WATER_ELEMENT;     break;
+            case  3: player1_element = Game.WIND_ELEMENT;      break;     
+            case  4: player1_element = Game.EARTH_ELEMENT;     break;
+            case  5: player1_element = Game.LIGHTNING_ELEMENT; break;
+            case  6: player1_element = Game.ICE_ELEMENT;       break;
+            case  7: player1_element = Game.NATURE_ELEMENT;    break;     
+            case  8: player1_element = Game.METAL_ELEMENT;     break;
+            case  9: player1_element = Game.AILMENT_ELEMENT;   break;
+            case 10: player1_element = Game.XXX_ELEMENT;       break;
+            case 11: player1_element = Game.BARRIER_ELEMENT;   break;     
+            case 12: player1_element = Game.ANIMAL_ELEMENT;    break;
+            case 13: player1_element = Game.SUMMON_ELEMENT;    break;
+            case 14: player1_element = Game.MIRROR_ELEMENT;    break;
+            case 15: player1_element = Game.TIME_ELEMENT;      break;     
+            case 16: player1_element = Game.SPACE_ELEMENT;     break;
         }
+        updateConfirmationPanel();
                 
     }//GEN-LAST:event_randomRB_1ActionPerformed
+
+    private void randomRB_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_randomRB_2ActionPerformed
+        int i = random.nextInt(16)+1;
+        switch(i){
+            case  1: player2_element = Game.FIRE_ELEMENT;      break;
+            case  2: player2_element = Game.WATER_ELEMENT;     break;
+            case  3: player2_element = Game.WIND_ELEMENT;      break;     
+            case  4: player2_element = Game.EARTH_ELEMENT;     break;
+            case  5: player2_element = Game.LIGHTNING_ELEMENT; break;
+            case  6: player2_element = Game.ICE_ELEMENT;       break;
+            case  7: player2_element = Game.NATURE_ELEMENT;    break;     
+            case  8: player2_element = Game.METAL_ELEMENT;     break;
+            case  9: player2_element = Game.AILMENT_ELEMENT;   break;
+            case 10: player2_element = Game.XXX_ELEMENT;       break;
+            case 11: player2_element = Game.BARRIER_ELEMENT;   break;     
+            case 12: player2_element = Game.ANIMAL_ELEMENT;    break;
+            case 13: player2_element = Game.SUMMON_ELEMENT;    break;
+            case 14: player2_element = Game.MIRROR_ELEMENT;    break;
+            case 15: player2_element = Game.TIME_ELEMENT;      break;     
+            case 16: player2_element = Game.SPACE_ELEMENT;     break;
+        }
+        updateConfirmationPanel();
+    }//GEN-LAST:event_randomRB_2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -510,4 +553,24 @@ public class NewGamePanel extends javax.swing.JPanel {
     private javax.swing.JRadioButton windRB_1;
     private javax.swing.JRadioButton windRB_2;
     // End of variables declaration//GEN-END:variables
+
+    private void updateConfirmationPanel() {
+        boolean ready = true;
+        confirmationLabel.setText("");
+        if(Game.getElementName(player1_element) == null){ //if player1 not set
+            confirmationLabel.setText(confirmationLabel.getText().concat("< >"));
+            ready = false;
+        }
+        else
+            confirmationLabel.setText(confirmationLabel.getText().concat(Game.getElementName(player1_element)));
+        confirmationLabel.setText(confirmationLabel.getText().concat(" vs. "));
+        if(Game.getElementName(player2_element) == null){ //if player2 not set
+            confirmationLabel.setText(confirmationLabel.getText().concat("< >"));
+            ready = false;
+        }
+        else
+            confirmationLabel.setText(confirmationLabel.getText().concat(Game.getElementName(player2_element)));
+        nextButton.setEnabled(ready);
+    }
 }
+
