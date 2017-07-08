@@ -5,6 +5,8 @@
  */
 package twilight;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Jayde
@@ -22,11 +24,16 @@ class Game {
             AILMENT_ELEMENT_NAME = "Ailment", XXX_ELEMENT_NAME = "xxx", BARRIER_ELEMENT_NAME = "Barrier", ANIMAL_ELEMENT_NAME = "Animal",
             SUMMON_ELEMENT_NAME = "Summon", MIRROR_ELEMENT_NAME = "Mirror", TIME_ELEMENT_NAME = "Time", SPACE_ELEMENT_NAME = "Space";
     
+    ArrayList<Player> players = new ArrayList<Player>();
     Player player1, player2, player3;
+    int player1_element, player2_element, player3_element;
     public Game(){
         
   
         
+    }
+    public void addPlayer (Player p){ //adds player to next available slot
+        players.add(p);
     }
     public static String getElementName(int i){
         switch(i){
@@ -49,6 +56,10 @@ class Game {
             
         }
         return null;
+    }
+
+    void addPlayer(String p2n, int p2e, boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

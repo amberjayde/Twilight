@@ -36,6 +36,16 @@ public class Controller implements java.awt.event.ActionListener {
 		System.out.println("Controller: adding view");
 		this.view = v;
     } //addView()
+    /**
+     * This method creates a new game when given the names and elements of 2 players.
+     * @param p1n The name of the first player in the new game.
+     * @param p1e The element of the first player in the new game.
+     * @param p2n The name of the second player in the new game.
+     * @param p2e The element of the second player in the new game.
+     */
+    public void newGame(String p1n, int p1e, String p2n, int p2e){ 
+        model.newGame(p1n,p1e,p2n,p2e);
+    }
 
     @Override
     public void actionPerformed(ActionEvent e) {

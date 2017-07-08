@@ -5,6 +5,9 @@
  */
 package twilight;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author Jayde
@@ -150,12 +153,22 @@ public class View extends javax.swing.JFrame {
             
     }
     void newGamePanel() {
-        newGamePanel = new NewGamePanel();
-        System.out.println("here");
+        newGamePanel = new NewGamePanel(newGameListener());
         this.add(newGamePanel);
         pack();
         repaint();
     }
+    private ActionListener newGameListener()
+    {
+        return new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                controller.newGame(newGamePanel.getPlayer1name(), newGamePanel.getPlayer1element(),
+                                   newGamePanel.getPlayer2name(), newGamePanel.getPlayer2element());
+            }
+        };
+    }
+        
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem aboutMenuItem;

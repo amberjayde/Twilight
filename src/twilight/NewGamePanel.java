@@ -5,6 +5,7 @@
  */
 package twilight;
 
+import java.awt.event.ActionListener;
 import java.util.Random;
 
 /**
@@ -20,8 +21,10 @@ public class NewGamePanel extends javax.swing.JPanel {
     /**
      * Creates new form NewGamePanel
      */
-    public NewGamePanel() {
+    public NewGamePanel(){initComponents();} //empty constructor
+    public NewGamePanel(ActionListener a) { //construct accepts listener for new game creation
         initComponents();
+        nextButton.addActionListener(a);
     }
 
     /**
@@ -586,6 +589,11 @@ public class NewGamePanel extends javax.swing.JPanel {
 
         nextButton.setText("Next >>");
         nextButton.setEnabled(false);
+        nextButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nextButtonActionPerformed(evt);
+            }
+        });
         confirmationPanel.add(nextButton, java.awt.BorderLayout.LINE_END);
 
         add(confirmationPanel);
@@ -806,6 +814,10 @@ public class NewGamePanel extends javax.swing.JPanel {
         updateConfirmationPanel();
     }//GEN-LAST:event_spaceRB_2ActionPerformed
 
+    private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nextButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton ailmentRB_1;
@@ -883,5 +895,10 @@ public class NewGamePanel extends javax.swing.JPanel {
             confirmationLabel.setText(confirmationLabel.getText().concat(Game.getElementName(player2_element)));
         nextButton.setEnabled(ready);
     }
+    //getters and setters
+    public String getPlayer1name(){return player1_NameTextField.getText();}
+    public int getPlayer1element(){return player1_element;}
+    public String getPlayer2name(){return player2_NameTextField.getText();}
+    public int getPlayer2element(){return player2_element;}
 }
 

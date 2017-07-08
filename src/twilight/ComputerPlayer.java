@@ -11,4 +11,12 @@ package twilight;
  */
 public class ComputerPlayer extends Player {
     
+    public ComputerPlayer(String p1n, int p1e) {
+        super(p1n, p1e);
+        this.setComputerPlayer(true);
+    }
+    
+    
+    
+    
 }

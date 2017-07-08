@@ -12,6 +12,7 @@ package twilight;
 public class Model {
     
     private Game tempGame, game1, game2, game3;
+    private Player player1, player2,player3,player4;
     public Model()
     {
         
@@ -34,6 +35,22 @@ public class Model {
                 return tempGame;
         }
         
+    }
+    /**
+     * This method creates a new game.
+     * It then adds player 1 and 2 assuming player 2 is a computer player.
+     * @param p1n The name of the first player in the new game.
+     * @param p1e The element of the first player in the new game.
+     * @param p2n The name of the second player in the new game.
+     * @param p2e The element of the second player in the new game.
+     */
+    public void newGame(String p1n, int p1e, String p2n, int p2e)
+    {
+        game1 = new Game();
+        player1 =  new Player(p1n,p1e);
+        player2 = new ComputerPlayer(p2n,p2e);
+        game1.addPlayer(player1); //adds player 1 with their element to game.
+        game1.addPlayer(player2); //adds player 2 with their element to game (assuming computer).
     }
     public Game getGame(){return game1;} //empty call returns game 1
     public Game getGame(int i){ //return game # given
